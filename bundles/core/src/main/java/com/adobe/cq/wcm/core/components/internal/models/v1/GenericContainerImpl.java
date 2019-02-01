@@ -64,13 +64,11 @@ public class GenericContainerImpl extends AbstractContainerImpl implements Gener
 
     public String getStyleString()
     {
-        String backgroundStyle = "background-color: " + backgroundColor + ";";
-        //String backgroundStyle = "background: url('" + backgroundImageSrc + "') center; background-size: cover;";;
+        String backgroundStyle = "background-image:url(" + backgroundImageSrc + ");background-size:100%;background-repeat:no-repeat;";
 
         StringBuilder sb = new StringBuilder();
         sb
-            .append(backgroundStyle).append(" ")
-            .append(backgroundStyle).append(" ");
+            .append(backgroundStyle);
 
         return sb.toString();
     }
